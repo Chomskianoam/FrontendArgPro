@@ -254,18 +254,15 @@ padding-top: 6rem;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
-.template_cards + .template_cards{
-    margin-top: 40px;
-}
-
 .template_cards h1{
+    display: flex;
     padding-top: 1rem;
     padding-left: 1rem;
     line-height: 3rem;
 }
 
 .template_cards p{
-    padding-bottom: 1rem;
+    padding-bottom: .5rem;
     padding-left: 1rem; 
 }
 
@@ -286,9 +283,8 @@ padding-top: 6rem;
 }
 
 #logo_tecnica{
-    border-radius: 50%;
     height: 140px;
-    padding: 1.2rem 2rem 0 0;
+    padding: 2.5rem 2rem 0 0;
 }
 
 .filo{

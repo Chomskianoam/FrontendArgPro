@@ -11,6 +11,9 @@ export class AboutMeComponent implements OnInit {
   constructor(private datosData:DataService) { }
 
   ngOnInit(): void {
+    this.datosData.obtenerDatos().subscribe(data =>{
+      console.log(data)
+    })
   }
 
 }
