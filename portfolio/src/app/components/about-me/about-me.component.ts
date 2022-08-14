@@ -7,12 +7,13 @@ import { DataService } from 'src/app/services/data.service';
   styleUrls: ['./about-me.component.css']
 })
 export class AboutMeComponent implements OnInit {
+  aboutme: any;
 
   constructor(private datosData:DataService) { }
 
   ngOnInit(): void {
-    this.datosData.obtenerDatos().subscribe(data =>{
-      console.log(data)
+    this.datosData.obtenerDatos().subscribe(data => {
+      this.aboutme=data;
     })
   }
 

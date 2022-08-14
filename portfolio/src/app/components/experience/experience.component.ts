@@ -7,10 +7,14 @@ import { DataService } from 'src/app/services/data.service';
   styleUrls: ['./experience.component.css']
 })
 export class ExperienceComponent implements OnInit {
+experienceList: any;
 
-  constructor() { }
+  constructor(private datosData:DataService) { }
 
   ngOnInit(): void {
+    this.datosData.obtenerDatos().subscribe(data => {
+      this.experienceList=data.experience;
+    })
   }
 
 }

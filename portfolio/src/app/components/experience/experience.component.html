@@ -4,20 +4,26 @@
             <h1 class="title pt-5 pb-5">Experiencia</h1>  
             <a href="#" class="title pt-4 ps-3"><i class="bi bi-plus-slash-minus "></i></a>
         </div>
-            <div class="template_cards flex-shrink-1">
-                <div class="written">
-                    <div class="d-flex justify-content-baseline">
-                        <i class="uil uil-pen" id="edit_tecnica"></i>
-                        <i class="uil uil-trash-alt" id="eliminar_trabajo_uno"></i>
-                        <h1 id="h1_experiencia_uno">Back Up Gráfico</h1>
+            
+            <ul style="width: 100%;">
+                <li class="d-flex pb-5 flex-column justify-content-center align-items-center" *ngFor="let experience of experienceList">
+                    <div class="template_cards flex-shrink-1">
+                        <div class="written">
+                            <div class="d-flex justify-content-baseline">
+                                <i class="uil uil-pen"></i>
+                                <i class="uil uil-trash-alt" ></i>
+                                <h1>{{experience.name}}</h1>
+                            </div>
+                            <p class="lh-lg"> 
+                                {{experience.description}} <br>
+                                {{experience.startyear}} <br>
+                            </p>
+                        </div>
+                        <div class="logo d-none d-sm-block">
+                            <img id="logo_tecnica" [src]="experience.image"/> 
+                        </div>  
                     </div>
-                    <p id="p_trabajouno" class="lh-lg">Local de diseño gráfico.<br>
-                                    2016-2020
-                    </p>
-                </div>
-                <div class="escudo ténica d-none d-sm-block">
-                    <img class="imgs_cards" src="./assets/Backgrounds/back_up.jpg" alt="back_up">
-                </div>   
-            </div>
+                </li>
+            </ul> 
     </div>
 </section>

@@ -248,7 +248,7 @@ padding-top: 6rem;
     background-color: #9CD3D8; 
     border-radius: 1rem;
     height: 100%;
-    width: 90%;
+    /* width: 90%; */
     display: flex;
     justify-content: space-between; 
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
@@ -263,7 +263,7 @@ padding-top: 6rem;
 
 .template_cards p{
     padding-bottom: .5rem;
-    padding-left: 1rem; 
+    padding-left: 4rem; 
 }
 
 .written{

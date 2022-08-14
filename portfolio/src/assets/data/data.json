@@ -1,11 +1,25 @@
 {
-    "name": "Rafael Machado",
-    "backImage": "./assets/Backgrounds/fondo.jpg",
-    "perfil-picture": "./assets/Backgrounds/perfil.jpg",
-    "ubication": "Buenos Aires, Argentina",
-    "position": "Full Stack Web Developer",
-    "about-me": "Capacitado en el curso del Ministerio de Desarrollo 'Argentina Programa'.",
-    "about-me-2": "Estudiante de la carrera Letras en la Facultad de Filosofía y Letras de la UBA. Dentro de la misma opté por la rama de lingüística para aprender sobre Natural Language Processing (NLP).",
+    
+        
+            "name": "Rafael Machado",
+            "backImage": "./assets/Backgrounds/fondo.jpg",
+            "perfilpicture": "./assets/Backgrounds/perfil.jpg",
+            "ubication": "Buenos Aires, Argentina",
+            "position": "Full Stack Web Developer",
+            "description": "Capacitado en el curso del Ministerio de Desarrollo 'Argentina Programa'.",
+            "description1": "Estudiante de la carrera Letras en la Facultad de Filosofía y Letras de la UBA.",
+            "description2": " Dentro de la misma opté por la rama de lingüística para aprender sobre Natural Language Processing (NLP)."
+        
+    ,
+    
+    "projects": [
+        {   
+            "name":"Portfolio",
+            "description": "Proyecto creado para Argentina Programa",
+            "year": "2022",
+            "image": "./assets/Backgrounds/GitHub-Logo.png"
+        }
+    ],
     "education": [
         {
             "year": "2015",
@@ -26,19 +40,13 @@
     "experience":[
         {
             "name":"Back Up Gráfico",
-            "place": "Local de diseño gráfico",
-            "year-start": "2016",
+            "description": "Local de diseño gráfico",
+            "startyear": "2016",
             "year-end":"2020",
-            "image": "./assets/Backgrounds/back_up.jpg"
+            "image": "./assets/Backgrounds/back-up.png"
         }
-    ],
-    "projects":[
-        {   
-            "name":"Portolio",
-            "description": "Proyecto creado para Argentina Programa",
-            "year": "2022",
-            "image": "<i class='uil uil-github'>"
-        }
-    ]      
+    ]
+   
+      
 
 }

@@ -7,7 +7,7 @@ import { DataService } from 'src/app/services/data.service';
   styleUrls: ['./projects.component.css']
 })
 export class ProjectsComponent implements OnInit {
-projectsList:any;
+  projectsList:any;
 
   constructor(private datosData:DataService) { }
 
