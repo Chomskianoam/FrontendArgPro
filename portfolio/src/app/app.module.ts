@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -10,6 +11,10 @@ import { EducationComponent } from './components/education/education.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './components/login/login.component';
+import { BtnLogInComponent } from './components/btn-log-in/btn-log-in.component';
+import { ContainerComponent } from './components/container/container.component';
+
 
 @NgModule({
   declarations: [
@@ -19,7 +24,10 @@ import { HttpClientModule } from '@angular/common/http';
     SkillsComponent,
     EducationComponent,
     ExperienceComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    LoginComponent,
+    BtnLogInComponent,
+    ContainerComponent,
   ],
   imports: [
     BrowserModule,

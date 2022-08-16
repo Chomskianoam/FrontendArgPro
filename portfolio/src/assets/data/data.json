@@ -1,6 +1,4 @@
 {
-    
-        
             "name": "Rafael Machado",
             "backImage": "./assets/Backgrounds/fondo.jpg",
             "perfilpicture": "./assets/Backgrounds/perfil.jpg",
@@ -8,8 +6,7 @@
             "position": "Full Stack Web Developer",
             "description": "Capacitado en el curso del Ministerio de Desarrollo 'Argentina Programa'.",
             "description1": "Estudiante de la carrera Letras en la Facultad de Filosofía y Letras de la UBA.",
-            "description2": " Dentro de la misma opté por la rama de lingüística para aprender sobre Natural Language Processing (NLP)."
-        
+            "description2": " Dentro de la misma opté por la rama de lingüística para aprender sobre Natural Language Processing (NLP)."  
     ,
     
     "projects": [
