@@ -1,0 +1,30 @@
+<section class="p-4">
+    <div class="cont-start rounded-5 pb-5 flex-column d-flex justify-content-center align-items-center">
+        <div class="d-flex">
+            <h1 class="title pt-5 pb-5 font-size-lg">Proyectos</h1>  
+            <a href="#" class="title pt-4 ps-3"><i class="bi bi-plus-slash-minus "></i></a>
+        </div>
+
+        <ul style="width: 100%;">
+            <li class="d-flex pb-5 flex-column justify-content-center align-items-center" *ngFor="let project of projectsList">
+                <div class="template_cards flex-shrink-1">
+                    <div class="written">
+                        <div class="d-flex justify-content-baseline">
+                            <i class="uil uil-pen"></i>
+                            <i class="uil uil-trash-alt" ></i>
+                            <h1>{{project.name}}</h1>
+                        </div>
+                        <p class="lh-lg"> 
+                            {{project.description}} <br>
+                            {{project.year}} <br>
+                        </p>
+                    </div>
+                    <div class="logo d-none d-sm-block">
+                        <img id="logo_tecnica" [src]="project.image"/> 
+                    </div>  
+                </div>
+            </li>
+        </ul> 
+
+    </div>
+</section>

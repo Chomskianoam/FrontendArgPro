@@ -1,0 +1,44 @@
+<section class="start p-4">
+    <div class="rounded-5 cont-start">
+        
+        <div class="rounded-4 rounded-top background_picture d-none d-sm-block">
+            <img class="background-inicio position-relative d-none d-md-block" [src]="aboutme.backImage" alt="background"> 
+        </div>
+        
+        <div class="information">
+            
+            <div class="container_perfil position-absolute">
+                <img [src]="aboutme.perfilpicture" alt="perfil" class="perfil rounded-circle ms-4 position-absolute">
+            
+            </div>
+            
+          
+          
+            <div class="d-flex">
+
+                <div class="name ps-0" style="width: 25%;">
+                    <h2 class="text-white">{{aboutme.name}}</h2>
+                    <p class="text-dark" style="height: 1rem;">{{aboutme.ubication}}</p>
+                </div>
+
+                <div class="d-flex pt-4">
+                
+                    <div class="about_description pe-3"> 
+                        <div class="d-flex">
+                            <i class="uil uil-edit pt-2" style="font-size: 1.5rem;"></i>
+                            <h1 class="px-2">About Me:</h1>
+                        </div>
+                        
+                        <h3>Full Stack <span class="text-warning">Web Developer</span></h3>
+                            
+                        <h4>{{aboutme.description}}</h4> 
+                       
+                        <h4 class="d-block">{{aboutme.description1}}<br> {{aboutme.description2}}</h4>
+                    </div>
+                </div>
+            </div>  
+        
+
+        </div>
+    </div>
+</section> 

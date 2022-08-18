@@ -1,0 +1,345 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+    --body-font:  'Poppins', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.grid{
+    display: grid;
+    gap: 1.5rem;
+}
+ 
+/*body{
+    margin: 0;
+    padding: 0;
+}*/
+
+section{
+    /*background-image: url(../Backgrounds/arrancaono.jpg);*/ 
+    background-position: center;
+    background-size: cover;
+    background-color: #f2f2f2;
+}
+
+.bg-navbar{
+    background-color: #0b6986;
+}
+
+/*===================HEADER=================*/
+
+header{
+    background-color: #0b6986;
+    font-size: 1.2rem;
+}
+
+.button-lgn{
+  background-color: #9CD3D8; /*#c2fbd7*/
+  border-radius: 100px; 
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roboto,sans-serif;
+  padding: 7px 20px;
+  text-align: center;
+  border: 0;
+  font-size: 16px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+/*==============================INICIO=================*/
+
+.cont-start{
+    padding-bottom: 2rem;
+    background-color: #0396A6;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); 
+}
+
+.uil{
+    color: #0b6986;
+}
+
+.uil:hover{
+    color:#f2f2f2;
+}
+
+.background_picture{
+    width: 100%;
+    max-height: 380px;      /*Definí el tamaño en pixeles. Modificar este y el de all information para que sea responsivo. ¿Quizás con Bootstrap?*/
+}
+
+.background-inicio{
+    width: 100%;
+    max-height: 380px;      
+    border-radius: 30px 30px 0 0;     
+    border: 3px solid #0b6986;
+}
+
+.information{
+    border-radius: 10px;
+}
+
+.container_perfil{
+    position: absolute;     /*Poniéndole position relative a la imagen de fondo, y absolute al contenedor de la foto de perfil, pude superponerlas*/
+    width: 150px; 
+    height: 150px; 
+    top: 24rem;
+    
+} 
+
+.perfil{
+    height: 150px;
+    width: 150px;
+    border:3px solid #0b6986;
+    
+}
+
+.about_me{
+    display: flex;
+    justify-content: end;
+}
+
+
+.name{
+    width: 25%;
+    margin: 7rem 1.5rem 0 1.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.name p{
+    font-size: 1rem;
+    color: black;
+   }
+
+.about_description{
+    font-family: 'Poppins', sans-serif;  
+}
+
+.about_description h4,h1{
+    color: white;
+}
+
+.about_description h1{
+    font-size: 3rem;
+    line-height: 3rem;
+    
+}
+
+.about_description h4{
+    font-size: 1.25rem;
+}
+
+#arg_about{
+    height: 2.5rem;   
+}
+
+#filo_about{
+    height: 2.5rem;
+   
+}
+
+/*=========================SKILLS==========================*/
+
+.container{
+    background-color: #0396A6;
+}
+
+.title{
+    font-size: 5rem;    
+    font-family: 'Poppins', 'Sans-serif';
+}
+
+.bi-plus-slash-minus{
+    color:#0b6986;
+    font-size: 3rem;
+}
+
+.bi-plus-slash-minus:hover{
+    color:#f2f2f2;
+}
+
+#title_skills{
+padding-top: 6rem;
+}
+
+.container{
+   width: 100%;
+}
+
+.card3{
+    background-color: #9CD3D8;  
+    height: auto;
+    padding: 1.8rem;
+    border-radius: 1rem;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.card h3{
+    text-align: center;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    padding-right: 10%;
+}   
+
+.icon_curly{
+    color: white;
+    font-size: 1.7rem;
+    padding-top: 5%;
+    padding-left: 12%;
+}
+
+.icon_edit{
+    color: #c2bcc2;
+    font-size: 1rem;
+    align-self: grid;
+    padding-top: 7%;
+    padding-right: 10%;
+    cursor: pointer;
+    transition: color .5s;
+    }
+.icon_edit{
+    color: blueviolet;
+}
+
+
+.card progress{
+   font-weight: 2rem;
+}
+
+.list{                                  
+    line-height: 1.8rem;                 /*Con esto cambio la distancia entre cada skill y barra de progreso*/
+}
+
+.list p{
+    font-size: 1.1rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.d-flex justify-content-between{
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon_close_card1{
+    cursor: pointer;
+    visibility:hidden;
+}
+
+.icon_close_card2{
+    cursor: pointer;
+    visibility:hidden;
+}
+
+.active{
+    cursor: pointer;
+    visibility: visible;
+}
+
+/*=========================SECTION======================*/
+
+.template_cards {
+    background-color: #9CD3D8; 
+    border-radius: 1rem;
+    height: 100%;
+    /* width: 90%; */
+    display: flex;
+    justify-content: space-between; 
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.template_cards h1{
+    display: flex;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    line-height: 3rem;
+}
+
+.template_cards p{
+    padding-bottom: .5rem;
+    padding-left: 4rem; 
+}
+
+.written{
+    font-family: 'Poppins', sans-serif;
+}
+
+.uil-trash-alt{
+    padding-top: 1.7rem;
+    padding-right: 0;
+    cursor: pointer;
+}
+
+.uil-pen{
+    padding-top: 1.7rem;
+    padding-left: 1rem;
+    cursor: pointer;   
+}
+
+#logo_tecnica{
+    height: 140px;
+    padding: 2.5rem 2rem 0 0;
+}
+
+.filo{
+    padding-top: 20px;
+}
+
+#logo_filo{
+    height: 120px;
+    width: auto;
+    padding: 3rem 2rem 0 0;
+}
+
+/*================EXPERIENCIA=================*/
+
+.imgs_cards{
+    border-radius: 50%;
+    height: 120px;
+    padding: 1.5rem 2rem 0 0;
+}
+
+/*==================PROYECTOS==================*/
+
+.uil-github{
+    font-size: 100px;
+    padding: 1.5rem 2rem 0 0;
+    color: #0b6986;
+}
+
+@media all and (max-width:768px){
+    .container_perfil{
+        position:relative;  
+        top: 0;
+        padding-top: 5.5rem;
+    }
+    .perfil{
+        position: relative;
+    }
+    .name{
+        padding-top: 4rem;
+    }
+}
+
+@media all and (max-width:620px){
+     .title{
+        font-size: 4rem;
+     }
+    
+ }
+
+ @media all and (max-width:576px){     
+     .title{
+        font-size: 3rem;
+     }
+
+     .bi-plus-slash-minus{
+        font-size: 2rem;
+    }
+ }

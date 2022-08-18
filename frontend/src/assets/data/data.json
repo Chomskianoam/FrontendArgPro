@@ -1,0 +1,49 @@
+{
+            "name": "Rafael Machado",
+            "backImage": "./assets/Backgrounds/fondo.jpg",
+            "perfilpicture": "./assets/Backgrounds/perfil.jpg",
+            "ubication": "Buenos Aires, Argentina",
+            "position": "Full Stack Web Developer",
+            "description": "Capacitado en el curso del Ministerio de Desarrollo 'Argentina Programa'.",
+            "description1": "Estudiante de la carrera Letras en la Facultad de Filosofía y Letras de la UBA.",
+            "description2": " Dentro de la misma opté por la rama de lingüística para aprender sobre Natural Language Processing (NLP)."  
+    ,
+    
+    "projects": [
+        {   
+            "name":"Portfolio",
+            "description": "Proyecto creado para Argentina Programa",
+            "year": "2022",
+            "image": "./assets/Backgrounds/GitHub-Logo.png"
+        }
+    ],
+    "education": [
+        {
+            "year": "2015",
+            "name": "Escuela de Educación Técnica N°2",
+            "ubication": "Merlo BS.AS",
+            "title": "Maestro mayor de obras",
+            "img": "./assets/Backgrounds/eetn2.png"
+        },
+        {
+            "year": "En curso",
+            "name": "Universidad de Buenos Aires",
+            "bilding": "Filosofía y Letras",
+            "ubication":"CABA",
+            "title": "Licenciatura en Letras",
+            "img": "./assets/Backgrounds/Filo_uba.png"
+        }        
+    ],
+    "experience":[
+        {
+            "name":"Back Up Gráfico",
+            "description": "Local de diseño gráfico",
+            "startyear": "2016",
+            "year-end":"2020",
+            "image": "./assets/Backgrounds/back-up.png"
+        }
+    ]
+   
+      
+
+}
