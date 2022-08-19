@@ -10,10 +10,10 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { EducationComponent } from './components/education/education.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { ProjectsComponent } from './components/projects/projects.component';
-import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './components/login/login.component';
 import { BtnLogInComponent } from './components/btn-log-in/btn-log-in.component';
-import { ContainerComponent } from './components/container/container.component';
+import { HomeComponent } from './components/home/home.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -27,7 +27,7 @@ import { ContainerComponent } from './components/container/container.component';
     ProjectsComponent,
     LoginComponent,
     BtnLogInComponent,
-    ContainerComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
