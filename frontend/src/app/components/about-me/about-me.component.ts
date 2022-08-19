@@ -10,14 +10,11 @@ import { PersonaService } from 'src/app/services/persona.service';
 })
 export class AboutMeComponent implements OnInit {
   PersonaModel: PersonaModel = new PersonaModel("", "", "");
-  aboutme: any;
 
-  constructor(private datosData:DataService, public personaService:PersonaService) { }
+  constructor( public personaService:PersonaService) { }
 
   ngOnInit(): void {
-    this.datosData.obtenerDatos().subscribe(data => {
-      this.aboutme=data;
-    }),
+    
     this.personaService.getPersona().subscribe(data => {this.PersonaModel = data})
   }
 
