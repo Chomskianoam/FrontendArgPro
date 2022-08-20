@@ -1,3 +1,4 @@
 <div class="btn">
-  <button class="button-lgn" type="submit" (click)="login()">Log In</button>   
+  <button class="button-lgn" type="submit" (click)="login()" *ngIf="!isLogged">Log In</button>   
+  <button class="button-lgn" type="submit" (click)="onLogOut()" *ngIf="isLogged">Log Out</button>  
 </div>

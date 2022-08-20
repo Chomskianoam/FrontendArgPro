@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { TokenService } from 'src/app/services/token.service';
 
 @Component({
   selector: 'app-btn-log-in',
@@ -7,14 +8,24 @@ import { Router } from '@angular/router';
   styleUrls: ['./btn-log-in.component.css']
 })
 export class BtnLogInComponent implements OnInit {
-
-  constructor(private Router:Router) { }
+  isLogged = false;
+  constructor(private Router:Router, private tokenService: TokenService) { }
 
   ngOnInit(): void {
+    if(this.tokenService.getToken()){
+      this.isLogged = true;
+    }else{
+      this.isLogged = false;
+    }
   }
 
   login(){
     this.Router.navigate(['/login']);
+  }
+
+  onLogOut(): void{
+    this.tokenService.logOut();
+    window.location.reload();
   }
 
 
