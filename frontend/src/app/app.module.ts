@@ -14,8 +14,10 @@ import { LoginComponent } from './components/login/login.component';
 import { BtnLogInComponent } from './components/btn-log-in/btn-log-in.component';
 import { HomeComponent } from './components/home/home.component';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { InterceptorProvider } from './services/interceptor-service';
+import { NewExperienciaComponent } from './components/experience/new-experiencia.component';
+import { EditExperienciaComponent } from './components/experience/edit-experiencia.component';
 
 
 @NgModule({
@@ -29,13 +31,16 @@ import { InterceptorProvider } from './services/interceptor-service';
     ProjectsComponent,
     LoginComponent,
     BtnLogInComponent,
-    HomeComponent
+    HomeComponent,
+    NewExperienciaComponent,
+    EditExperienciaComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [
     InterceptorProvider

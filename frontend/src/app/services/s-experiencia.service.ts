@@ -7,7 +7,7 @@ import { Experiencia } from '../model/experiencia';
   providedIn: 'root'
 })
 export class SExperienciaService {
-  expURL = 'http://localhost:8080/explab'  //Recordar que esto sale de la clase controller.
+  expURL = 'http://localhost:8080/explab/'  //Recordar que esto sale de la clase controller.
 
 
   constructor(private httpClient: HttpClient) { }

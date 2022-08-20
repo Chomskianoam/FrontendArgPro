@@ -25,14 +25,20 @@
                     </div>
                 </li>
             </ul> -->
-        <div>
+            <div class="col-lg-2">
+                <button class="btn btn-dark" type="button" routerLink="/nuevaexp" *ngIf="isLogged">
+                    Nueva experiencia
+                </button>
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-11">
             <table class="table">
                 <tbody>
-                    <tr>
-                        <td> Ojalá</td>
-                        <td> que</td>
-                        <td> pueda</td>
-                        <td> hacer mis cmabios</td>
+                    <tr *ngFor="let Experiencia of expe">
+                        <td><h2>{{Experiencia.nombreE}}</h2></td>
+                        <td> {{Experiencia.descripcionE}}</td>
+                        <td> <i class="bi bi-pencil-fill"></i> EDITAR</td>
+                        <td> BORRAR </td>
                     </tr>
                 </tbody>
             </table>
