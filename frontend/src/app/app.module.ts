@@ -22,7 +22,7 @@ import { InterceptorProvider } from './services/interceptor-service';
   declarations: [
     AppComponent,
     HeaderComponent,
-    AboutMeComponent,
+    AboutMeComponent, 
     SkillsComponent,
     EducationComponent,
     ExperienceComponent,
