@@ -18,7 +18,7 @@ export class AboutMeComponent implements OnInit {
     this.datosData.obtenerDatos().subscribe(data => {
       this.aboutme=data;
     }),
-    this.personaService.getPersona().subscribe(data => {this.PersonaModel = data})
+    this.personaService.getPersona().subscribe(data => {this.PersonaModel = data});
   }
 
 }
