@@ -165,6 +165,35 @@ header{
     color:#f2f2f2;
 }
 
+.bi-plus-circle-fill{
+    color:#0b6986;
+    font-size: 3rem;
+    top: 10rem;
+}
+
+.bi-plus-circle-fill:hover{
+    color:#f2f2f2;
+}
+
+.bi-trash{
+    color:#0b6986;
+    padding-top: 1.5rem;
+    padding-left: .2rem;
+    cursor: pointer;  
+    font-size: 20px; 
+}
+
+.bi-trash:hover{
+    color:#f2f2f2;
+}
+
+.uil-pen{
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+    cursor: pointer;  
+    font-size: 20px; 
+}
+
 #title_skills{
 padding-top: 6rem;
 }
@@ -261,8 +290,7 @@ padding-top: 6rem;
 }
 
 .template_cards p{
-    padding-bottom: .5rem;
-    padding-left: 4rem; 
+    padding: 0 1.5rem .3rem 4rem;
 }
 
 .written{
@@ -275,12 +303,7 @@ padding-top: 6rem;
     cursor: pointer;
 }
 
-.uil-pen{
-    padding-top: 1rem;
-    padding-left: 1rem;
-    cursor: pointer;  
-    font-size: 30px; 
-}
+
 
 #logo_tecnica{
     height: 140px;
