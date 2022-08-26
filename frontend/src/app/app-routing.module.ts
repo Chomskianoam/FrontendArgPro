@@ -11,7 +11,7 @@ const routes: Routes = [
  /* canActivate: [AuthGuard]*/},
   {path: 'login', component: LoginComponent},
   {path: 'nuevaexp', component: NewExperienciaComponent} ,
-  {path: 'editexp', component: EditExperienciaComponent}
+  {path: 'editexp/:id', component: EditExperienciaComponent}
   
 ];
 
