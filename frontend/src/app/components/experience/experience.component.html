@@ -3,12 +3,8 @@
        
         <div class="d-flex" style="justify-content:space-evenly">
             <h1 class="title pt-5 pb-5">Experiencia</h1>
-            <div class="title pb-5" style="padding-top: 2rem;">
-                <!--<button class="btn btn-dark" type="button" routerLink="/nuevaexp" *ngIf="isLogged">
-                    Nueva experiencia
-                </button>-->
-                <i class="bi bi-plus-circle-fill ps-3" routerLink="/nuevaexp" *ngIf="isLogged"></i>
-                
+            <div class="title pb-5" style="padding-top: 2rem;">    
+                <i class="bi bi-plus-circle-fill ps-3" routerLink="/nuevaexp" *ngIf="isLogged"></i>   
             </div>     
         </div>
         
@@ -39,19 +35,19 @@
                     <div class="template_cards flex-shrink-1">
                         <div class="written">
                             <div class="d-flex justify-content-baseline">
+                                <h1 class="pe-4">{{Experiencia.nombreE}}</h1>
                                 <i class="uil uil-pen" routerLink="/editexp/{{Experiencia.id}}" *ngIf="isLogged"></i>
                                 <i class="bi bi-trash" (click)="delete(Experiencia.id)" *ngIf="isLogged"></i>
-                                <h1 class="pe-4">{{Experiencia.nombreE}}</h1>
                             </div>
                             <p class="lh-lg"> 
                                 {{Experiencia.descripcionE}} <br>
                                 <!-- {{experience.startyear}} <br> -->
                             </p>
                         </div>
-                        <!-- ACÁ IRÍA LA IMAGEN 
+                        <!-- ACÁ IRÍA LA IMAGEN -->
                         <div class="logo d-none d-sm-block">
-                            <img id="logo_tecnica" [src]="experience.image"/> 
-                        </div>  --> 
+                            <img id="logo_tecnica" [src]="Experiencia.imgE"/> 
+                        </div>   
  
                     </div>
                 </li>
