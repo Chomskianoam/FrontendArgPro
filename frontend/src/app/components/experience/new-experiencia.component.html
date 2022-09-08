@@ -1,17 +1,18 @@
 <div class="container">
     <div class="row">
-        <div>
-            <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
+        <div >
+            <form (ngSubmit)="onCreate()" novalidate #f="ngForm" class="pb-3">
+                <h1 class="d-flex justify-content-center">Incorpore una nueva experiencia</h1>
                 <div class="form-group">
-                    <label for="nombreE">Nombre de la empresa</label>
+                    <label for="nombreE" class="text-white pt-2 pb-2">Nombre de la empresa</label>
                     <input type="text" class="form-control" name="nombreE" id="nombreE" [(ngModel)]="nombreE" required>
                 </div>
                 <div class="form-group">
-                    <label for="descripcionE">Descripción de tu labores en la misma</label>
+                    <label for="descripcionE" class="text-white pt-2 pb-2">Descripción de tu labores en la misma</label>
                     <input type="text" class="form-control" name="descripcionE" id="descripcionE" [(ngModel)]="descripcionE" required>
                 </div>
-                <div class="form-group">
-                    <label for="imgE">Imagen que dese agregar</label>
+                <div class="form-group pb-3">
+                    <label for="imgE" class="text-white pt-2 pb-2">Imagen que dese agregar</label>
                     <input type="text" class="form-control" name="imgE" id="imgE" [(ngModel)]="imgE" required>
                 </div>
                 <button class="btn btn-primary">

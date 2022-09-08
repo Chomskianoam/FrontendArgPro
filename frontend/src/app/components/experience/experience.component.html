@@ -35,9 +35,9 @@
                     <div class="template_cards flex-shrink-1">
                         <div class="written">
                             <div class="d-flex justify-content-baseline">
-                                <h1 class="pe-4">{{Experiencia.nombreE}}</h1>
                                 <i class="uil uil-pen" routerLink="/editexp/{{Experiencia.id}}" *ngIf="isLogged"></i>
                                 <i class="bi bi-trash" (click)="delete(Experiencia.id)" *ngIf="isLogged"></i>
+                                <h1 class="pe-4">{{Experiencia.nombreE}}</h1>                                
                             </div>
                             <p class="lh-lg"> 
                                 {{Experiencia.descripcionE}} <br>
