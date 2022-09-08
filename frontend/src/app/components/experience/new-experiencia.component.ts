@@ -19,8 +19,11 @@ export class NewExperienciaComponent implements OnInit {
   }
  
   onCreate():void{
+    console.log("A ver hasta dónde llega");
     const expe = new Experiencia(this.nombreE, this.descripcionE, this.imgE);
+    console.log("A ver hasta dónde llega");
     this.sExperiencia.save(expe).subscribe(data => {
+      console.log("A ver hasta dónde llega")
       alert("Experiencia añadida");
       this.router.navigate(['']);
     }, err =>{
