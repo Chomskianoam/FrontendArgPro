@@ -149,6 +149,10 @@ header{
 
 .container{
     background-color: #0396A6;
+    width: 100%;
+    /* background-color: #9CD3D8; */
+    border-radius: 1rem;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
 .title{
@@ -198,9 +202,7 @@ header{
 padding-top: 6rem;
 }
 
-.container{
-   width: 100%;
-}
+
 
 .card3{
     background-color: #9CD3D8;  

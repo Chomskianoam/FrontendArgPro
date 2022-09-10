@@ -1,6 +1,6 @@
 <div class="container">
     <div class="row">
-        <div >
+        <div>
             <form (ngSubmit)="onCreate()" novalidate #f="ngForm" class="pb-3">
                 <h1 class="d-flex justify-content-center">Incorpore una nueva experiencia</h1>
                 <div class="form-group">
@@ -12,7 +12,7 @@
                     <input type="text" class="form-control" name="descripcionE" id="descripcionE" [(ngModel)]="descripcionE" required>
                 </div>
                 <div class="form-group pb-3">
-                    <label for="imgE" class="text-white pt-2 pb-2">Imagen que dese agregar</label>
+                    <label for="imgE" class="text-white pt-2 pb-2">URL de la imagen que dese agregar</label>
                     <input type="text" class="form-control" name="imgE" id="imgE" [(ngModel)]="imgE" required>
                 </div>
                 <button class="btn btn-primary">
