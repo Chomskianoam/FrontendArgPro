@@ -8,28 +8,6 @@
             </div>     
         </div>
         
-        <!-- ============== DISEÑO ORIGINAL CON JSON ================ -->
-        <!--   <ul style="width: 100%;">
-                <li class="d-flex pb-5 flex-column justify-content-center align-items-center" *ngFor="let experience of experienceList">
-                    <div class="template_cards flex-shrink-1">
-                        <div class="written">
-                            <div class="d-flex justify-content-baseline">
-                                <i class="uil uil-pen"></i>
-                                <i class="uil uil-trash-alt" ></i>
-                                <h1>{{experience.name}}</h1>
-                            </div>
-                            <p class="lh-lg"> 
-                                {{experience.description}} <br>
-                                {{experience.startyear}} <br>
-                            </p>
-                        </div>
-                        <div class="logo d-none d-sm-block">
-                            <img id="logo_tecnica" [src]="experience.image"/> 
-                        </div>  
-                    </div>
-                </li>
-            </ul> -->
-        <!-- ============= DISEÑO ORIGINAL CON JWT ================ -->
            <ul style="width: 100%;">
                 <li class="d-flex pb-5 flex-column justify-content-center align-items-center" *ngFor="let Experiencia of expe">
                     <div class="template_cards flex-shrink-1">
@@ -52,37 +30,6 @@
                     </div>
                 </li>
             </ul> 
-
-        <!-- ===================== DISEÑO SACADO DEL VIDEO ================= 
-        <div class="col-lg-2">
-            <button class="btn btn-dark" type="button" routerLink="/nuevaexp" *ngIf="isLogged">
-                Nueva experiencia
-            </button>
-        </div>
-        <div class="col-lg-1"></div>
-        <div class="col-lg-11">
-            <table class="table">
-                <tbody>
-                    <tr *ngFor="let Experiencia of expe">
-                        <td>
-                            <h2>{{Experiencia.nombreE}}</h2>
-                        </td>
-                        <td> {{Experiencia.descripcionE}}</td>
-                        <td *ngIf="isLogged"> 
-                            <button class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}">
-                                <i class="bi bi-pencil-fill"></i> EDITAR 
-                            </button>
-                        </td>
-
-                        <td *ngIf="isLogged"> 
-                            <button class="btn btn-danger" (click)="delete(Experiencia.id)">
-                                <i class="bi bi-trash-fill"></i> BORRAR 
-                            </button>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>  -->
 
     </div>
 </section>
