@@ -1,0 +1,27 @@
+<div class="container" *ngIf="educ">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm" class="pb-3">
+                <h1 class="d-flex justify-content-center">Edite su información </h1>
+                <div class="form-group">
+                    <label for="nombreEd" class="text-white pt-2 pb-2">Nombre de la institución educativa</label>
+                    <input type="text" class="form-control" name="nombreEd" id="nombreEd" [(ngModel)]="educ.nombreEd" required>
+                </div>
+                <div class="form-group">
+                    <label for="tituloEd" class="text-white pt-2 pb-2">Título</label>
+                    <input type="text" class="form-control" name="tituloEd" id="tituloEd" [(ngModel)]="educ.tituloEd" required>
+                </div>
+                <div class="form-group">
+                    <label for="yearEd" class="text-white pt-2 pb-2">Año inicial y/o final de la formación</label>
+                    <input type="text" class="form-control" name="yearEd" id="yearEd" [(ngModel)]="educ.yearEd" required>
+                </div>
+                <div class="form-group">
+                    <label for="imgEd" class="text-white pt-2 pb-2">URL de la imagen que dese agregar</label>
+                    <input type="text" class="form-control" name="imgEd" id="imgEd" [(ngModel)]="educ.imgEd" required>
+                </div>
+                <button class="btn btn-primary">
+                    Editar tarjeta de educación
+                </button>
+            </form>
+        </div>
+    </div>
