@@ -1,11 +1,14 @@
 <section class="p-4">
     <div class="cont-start rounded-5 pb-5 flex-column d-flex justify-content-center align-items-center">
-        <div class="d-flex">
-            <h1 class="title pt-5 pb-5 font-size-lg">Proyectos</h1>  
-            <a href="#" class="title ps-3"><i class="bi bi-plus-slash-minus "> </i></a>
+       
+        <div class="d-flex" style="justify-content:space-evenly">
+            <h1 class="title pt-5 pb-5">Proyectos</h1> 
+            <div class="title pb-5" style="padding-top: 2rem;">    
+                <i class="bi bi-plus-circle-fill ps-3" routerLink="/nuevaproy" *ngIf="isLogged"></i>   
+            </div> 
         </div>
 
-        <ul style="width: 100%;">
+       <!-- <ul style="width: 100%;">
             <li class="d-flex pb-5 flex-column justify-content-center align-items-center" *ngFor="let project of projectsList">
                 <div class="template_cards flex-shrink-1">
                     <div class="written">
@@ -24,7 +27,31 @@
                     </div>  
                 </div>
             </li>
+        </ul> -->
+
+        <ul style="width: 100%;">
+            <li class="d-flex pb-5 flex-column justify-content-center align-items-center" *ngFor="let Proyectos of proy">
+                <div class="template_cards flex-shrink-1">
+                    <div class="written">
+                        <div class="d-flex justify-content-baseline">
+                            <i class="uil uil-pen" routerLink="/editproy/{{Proyectos.id}}" *ngIf="isLogged"></i>
+                            <i class="bi bi-trash" (click)="delete(Proyectos.id)" *ngIf="isLogged"></i>
+                            <h1 class="pe-4">{{Proyectos.nombreP}}</h1>                                
+                            </div>
+                            <p class="lh-lg"> 
+                                {{Proyectos.descripcionP}} <br>
+                                {{Proyectos.lenguajeP}} <br>   
+                            </p>
+                        </div>
+                         
+                        <div class="logo d-none d-sm-block">
+                            <img id="logo_tecnica" [src]="Proyectos.imgP"/> 
+                        </div>   
+     
+                </div>
+            </li>
         </ul> 
+
 
     </div>
 </section>

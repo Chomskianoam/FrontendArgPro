@@ -1,1 +1,28 @@
-<p>edit-proyecto works!</p>
+<div class="container" *ngIf="proy">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm" class="pb-3">
+                <h1 class="d-flex justify-content-center">Edite su proyecto</h1>
+                <div class="form-group">
+                    <label for="nombreP" class="text-white pt-2 pb-2">Nombre del proyecto</label>
+                    <input type="text" class="form-control" name="nombreP" id="nombreP" [(ngModel)]="proy.nombreP" required>
+                </div>
+                <div class="form-group">
+                    <label for="lenguajeP" class="text-white pt-2 pb-2">Lenguaje(s) de programación del proyecto</label>
+                    <input type="text" class="form-control" name="lenguajeP" id="lenguajeP" [(ngModel)]="proy.lenguajeP" required>
+                </div>
+                <div class="form-group">
+                    <label for="descripcionP" class="text-white pt-2 pb-2">Descripción del proyecto</label>
+                    <input type="text" class="form-control" name="descripcionP" id="descripcionP" [(ngModel)]="proy.descripcionP" required>
+                </div>
+                <div class="form-group">
+                    <label for="imgP" class="text-white pt-2 pb-2">URL de la imagen que dese agregar</label>
+                    <input type="text" class="form-control" name="imgP" id="imgP" [(ngModel)]="proy.imgP" required>
+                </div>
+                <button class="btn btn-primary">
+                    Actualizar proyecto
+                </button>
+            </form>
+        </div>
+    </div>
+</div>    

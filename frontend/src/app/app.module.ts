@@ -20,7 +20,6 @@ import { NewExperienciaComponent } from './components/experience/new-experiencia
 import { EditExperienciaComponent } from './components/experience/edit-experiencia.component';
 import { NewEducacionComponent } from './components/education/new-educacion.component';
 import { EditEducacionComponent } from './components/education/edit-educacion.component';
-import { NewProjectsComponent } from './components/projects/new-projects.component';
 import { EditProyectoComponent } from './components/projects/edit-proyecto.component';
 import { NewProyectoComponent } from './components/projects/new-proyecto.component';
 
@@ -41,7 +40,6 @@ import { NewProyectoComponent } from './components/projects/new-proyecto.compone
     EditExperienciaComponent,
     NewEducacionComponent,
     EditEducacionComponent,
-    NewProjectsComponent,
     EditProyectoComponent,
     NewProyectoComponent
   ],
