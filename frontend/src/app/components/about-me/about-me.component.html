@@ -1,44 +1,47 @@
 <section class="start p-4">
-    <div class="rounded-5 cont-start">
+    <div class="rounded-5 cont-start" *ngFor="let Aboutme of about">
+
+    <!-- <ul style="list-style-type: none; padding-left: 0rem; margin-bottom: 0rem;">
+        <li *ngFor="let Aboutme of about">  -->
         
         <div class="rounded-4 rounded-top background_picture d-none d-sm-block">
-            <img class="background-inicio position-relative d-none d-md-block" src="./../../../assets/Backgrounds/fondo.jpg" alt="background"> 
+            <img class="background-inicio position-relative d-none d-md-block" [src]="Aboutme.imgfondoD" alt="background"> 
         </div>
         
         <div class="information">
             
             <div class="container_perfil position-absolute">
-                <img src="/../../../assets/Backgrounds/perfil.jpg" alt="perfil" class="perfil rounded-circle ms-4 position-absolute">
-                
+                <img [src]="Aboutme.imgperfilD" alt="perfil" class="perfil rounded-circle ms-4 position-absolute"> 
             </div>
             
-          
-          
             <div class="d-flex">
 
                 <div class="name ps-0" style="width: 25%;">
-                    <h2 class="text-white"></h2>
-                    <p class="text-dark" style="height: 1rem;">{{PersonaModel.nombre}}</p>
+                    <h2 class="text-white">{{Aboutme.nombreD}}</h2>
+                    <p class="text-dark" style="height: 1rem;">{{Aboutme.ubicacionD}}</p>
                 </div>
 
                 <div class="d-flex pt-4">
-                
                     <div class="about_description pe-3"> 
                         <div class="d-flex">
-                            <i class="uil uil-edit pt-2" style="font-size: 1.5rem;"></i>
+                            <i class="uil uil-edit pt-2" style="font-size: 1.5rem;" routerLink="/editaboutme/{{Aboutme.id}}" *ngIf="isLogged"></i>
                             <h1 class="px-2">About Me:</h1>
                         </div>
                         
-                        <h3>Full Stack <span class="text-warning"> Web Developer </span></h3>
+                        <h3> <span class="text-warning"> {{Aboutme.puestoD}}  </span> </h3> 
                             
-                        <h4></h4> 
+                        <h4>{{Aboutme.infoD}}</h4> 
                        
-                        <h4 class="d-block"><br></h4>
+                        <h4 class="d-block">{{Aboutme.infosD}}</h4>
                     </div>
                 </div>
+
             </div>  
         
 
         </div>
+       
+       <!--  </li>
+     </ul>  -->   
     </div>
 </section> 

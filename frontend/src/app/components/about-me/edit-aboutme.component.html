@@ -1,0 +1,40 @@
+<div class="container" *ngIf="aboutMe">
+    <div class="row">
+        <div>
+            <form (ngSubmit)="onUpdate()" novalidate #f="ngForm" class="pb-3">
+                <h1 class="d-flex justify-content-center">Edite la sección Sobre mí</h1>
+                <div class="form-group">
+                    <label for="nombreD" class="text-white pt-2 pb-2">Tu nombre</label>
+                    <input type="text" class="form-control" name="nombreD" id="nombreD" [(ngModel)]="aboutMe.nombreD" required>
+                </div>
+                <div class="form-group">
+                    <label for="ubicacionD" class="text-white pt-2 pb-2">Zona donde residís</label>
+                    <input type="text" class="form-control" name="ubicacionD" id="ubicacionD" [(ngModel)]="aboutMe.ubicacionD" required>
+                </div>
+                <div class="form-group">
+                    <label for="puestoD" class="text-white pt-2 pb-2">Puesto de trabajo</label>
+                    <input type="text" class="form-control" name="puestoD" id="puestoD" [(ngModel)]="aboutMe.puestoD" required>
+                </div>
+                <div class="form-group">
+                    <label for="infoD" class="text-white pt-2 pb-2">Descripción sobre vos</label>
+                    <input type="text" class="form-control" name="infoD" id="infoD" [(ngModel)]="aboutMe.infoD" required>
+                </div>
+                <div class="form-group">
+                    <label for="infosD" class="text-white pt-2 pb-2">Otra descripción</label>
+                    <input type="text" class="form-control" name="infosD" id="infosD" [(ngModel)]="aboutMe.infosD" required>
+                </div>
+                <div class="form-group">
+                    <label for="imgfondoD" class="text-white pt-2 pb-2">URL de la imagen de fondo que desee agregar</label>
+                    <input type="text" class="form-control" name="imgfondoD" id="imgfondoD" [(ngModel)]="aboutMe.imgfondoD" required>
+                </div>
+                <div class="form-group">
+                    <label for="imgperfilD" class="text-white pt-2 pb-2">URL de la imagen de perfil que dese agregar</label>
+                    <input type="text" class="form-control" name="imgperfilD" id="imgperfilD" [(ngModel)]="aboutMe.imgperfilD" required>
+                </div>
+                <button class="btn btn-primary">
+                    Actualizar sección Sobre mí
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
