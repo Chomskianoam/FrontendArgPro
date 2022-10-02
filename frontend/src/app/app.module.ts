@@ -22,6 +22,7 @@ import { NewEducacionComponent } from './components/education/new-educacion.comp
 import { EditEducacionComponent } from './components/education/edit-educacion.component';
 import { EditProyectoComponent } from './components/projects/edit-proyecto.component';
 import { NewProyectoComponent } from './components/projects/new-proyecto.component';
+import { EditAboutmeComponent } from './components/about-me/edit-aboutme.component';
 
 
 @NgModule({
@@ -41,7 +42,8 @@ import { NewProyectoComponent } from './components/projects/new-proyecto.compone
     NewEducacionComponent,
     EditEducacionComponent,
     EditProyectoComponent,
-    NewProyectoComponent
+    NewProyectoComponent,
+    EditAboutmeComponent
   ],
   imports: [
     BrowserModule,
