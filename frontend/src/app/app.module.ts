@@ -1,7 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -23,6 +22,7 @@ import { EditEducacionComponent } from './components/education/edit-educacion.co
 import { EditProyectoComponent } from './components/projects/edit-proyecto.component';
 import { NewProyectoComponent } from './components/projects/new-proyecto.component';
 import { EditAboutmeComponent } from './components/about-me/edit-aboutme.component';
+import { NgCircleProgressModule } from 'ng-circle-progress';
 
 
 @NgModule({
@@ -50,7 +50,8 @@ import { EditAboutmeComponent } from './components/about-me/edit-aboutme.compone
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NgCircleProgressModule.forRoot({})
   ],
   providers: [
     InterceptorProvider
