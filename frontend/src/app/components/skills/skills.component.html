@@ -4,98 +4,133 @@
         <div class="d-flex justify-content-center">
             <h1 class="title d-flex justify-content-center pt-5 pb-5">Skills</h1> 
             <a href="#" class="title pt-4 ps-3">
-                <i class="bi bi-plus-slash-minus"></i>
+                <i class="bi bi-plus-circle-fill ps-3"></i>   
             </a>
         </div>
        
-        <div class="d-flex justify-content-evenly" style="padding-top: 1%;padding-bottom: 5rem;"> <!-- Con esto garantizo la distancia entre ambas tarjetas contenedoras-->
-            
-                <!-- <div class="card3 pt-2 pb-5" >
-                    <div class="d-flex justify-content-evenly pt-3"> 
-                        <i class="uil uil-brackets-curly icon_curly"></i>
-                        <h3 class="ps-4 text-white">Frontend <br> developer </h3>
-                        <i class="uil uil-pen icon_edit" id="edit_card1"></i>
-                    </div>
-                    <div class="d-flex justify-content-evenly" style="height: 250px; margin-top: 20%;">
-                        <div class="list d-flex justify-content-evenly flex-column text-white" id="card1">
-                            <div id="html">
-                                <div class="d-flex justify-content-between">
-                                    <p>HTML</p>  
-                                    <i class="uil uil-times icon_close_card1" id="close_html"></i>
-                                </div>
-                                <progress class="bar" value="90" max="100">70 %</progress> 
-                            </div>
-
-                            <div id="css">
-                                <div class="d-flex justify-content-between">
-                                    <p>CSS</p>
-                                    <i class="uil uil-times icon_close_card1" id="close_css"></i>
-                                </div>
-                                <progress class="bar" value="70" max="100">70 %</progress>         
-                            </div>
-                            <div id="javascript">
-                                <div class="d-flex justify-content-between">
-                                    <p>Javascript</p>
-                                    <i class="uil uil-times icon_close_card1" id="close_javascript"></i>
-                                </div>
-                                <progress class="bar" value="50" max="100">70 %</progress>  
-                            </div>
-                            
-                            <div id="angular"> 
-                                <div class="d-flex justify-content-between">
-                                    <p>Angular</p>
-                                    <i class="uil uil-times icon_close_card1" id="close_angular"></i>
-                                </div>
-                                <progress class="bar" value="10" max="100">70 %</progress>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="card3 pt-2 flex-shrink-1">
-                    <div class="d-flex justify-content-evenly align-items-center pt-3">
-                            <i class="uil uil-server-network icon_curly"></i>
-                        <h3 class="ps-4 text-white">Backend <br> developer </h3>
-                    <i class="uil uil-pen icon_edit" id="edit_card2"></i>
-                    </div>
-                
-                    <div class="d-flex justify-content-evenly" style="height: 250px; margin-top: 20%;">  /*Con esto ubicamos las habilidades en el centro de la tarjeta, pero de forma horizontal*/
-                        <div class="list d-flex justify-content-evenly flex-column text-white">
-                            <div id="mysql">
-                                <div class="d-flex justify-content-between">
-                                    <p>MySQL</p>  
-                                    <i class="uil uil-times icon_close_card2" id="close_mysql"></i>
-                                </div>
-                                <progress class="bar" value="90" max="100">70 %</progress> 
-                            </div>
-                            <div id="js">
-                                <div class="d-flex justify-content-between">
-                                    <p>Javascript</p>
-                                    <i class="uil uil-times icon_close_card2" id="close_js" ></i>
-                                </div>
-                                <progress class="bar" value="70" max="100">70 %</progress> 
-                            </div>
-                            
-                            <div id="java">
-                                <div class="d-flex justify-content-between">
-                                        <p>JAVA</p>
-                                        <i class="uil uil-times icon_close_card2" id="close_java"></i>
-                                    </div>
-                                    <progress class="bar" value="50" max="100">70 %</progress>    
-                                </div>
-
-                            <div id="firebase">
-                                <div class="d-flex justify-content-between">
-                                    <p>Firebase</p>
-                                    <i class="uil uil-times icon_close_card2" id="close_firebase"></i>
-                                </div>
-                                <progress class="bar" value="10" max="100">70 %</progress> 
-                            </div>
-                            
-                        </div>
-                    </div>
-                </div> -->
+        <div class="row">
+            <div class="col-sm-4 col-md-4 col-lg-4 text-center pb-5">
+                <circle-progress
+                    [percent]="85"
+                    [radius]="100"
+                    [title]="'HTML'"
+                    [titleColor]="'white'"
+                    [titleFontSize]="'2em'"
+                    [showUnits]="false"
+                    [showSubtitle]="false"
+                    [outerStrokeWidth]="16"
+                    [innerStrokeWidth]="6"
+                    [outerStrokeColor]="'#0b6986'"
+                    [innerStrokeColor]="'#9CD3D8'"
+                    [animation]="true"
+                    [animationDuration]="400"
+                    [showBackground]="true"
+                    [backgroundColor]="'white'"
+                    [backgroundOpacity]="0.2"
+                ></circle-progress>   
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4 text-center">
+                <circle-progress
+                    [percent]="85"
+                    [radius]="100"
+                    [title]="'CSS'"
+                    [titleColor]="'white'"
+                    [titleFontSize]="'2em'"
+                    [showUnits]="false"
+                    [showSubtitle]="false"
+                    [outerStrokeWidth]="16"
+                    [innerStrokeWidth]="6"
+                    [outerStrokeColor]="'#0b6986'"
+                    [innerStrokeColor]="'#9CD3D8'"
+                    [animation]="true"
+                    [animationDuration]="500"
+                    [showBackground]="true"
+                    [backgroundColor]="'white'"
+                    [backgroundOpacity]="0.2"
+                ></circle-progress>   
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4 text-center">
+                <circle-progress
+                    [percent]="85"
+                    [radius]="100"
+                    [title]="'Javascript'"
+                    [titleColor]="'white'"
+                    [titleFontSize]="'2em'"
+                    [showUnits]="false"
+                    [showSubtitle]="false"
+                    [outerStrokeWidth]="16"
+                    [innerStrokeWidth]="6"
+                    [outerStrokeColor]="'#0b6986'"
+                    [innerStrokeColor]="'#9CD3D8'"
+                    [animation]="true"
+                    [animationDuration]="550"
+                    [showBackground]="true"
+                    [backgroundColor]="'white'"
+                    [backgroundOpacity]="0.2"
+                ></circle-progress>   
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4 text-center">
+                <circle-progress
+                    [percent]="85"
+                    [radius]="100"
+                    [title]="'JAVA'"
+                    [titleColor]="'white'"
+                    [titleFontSize]="'2em'"
+                    [showUnits]="false"
+                    [showSubtitle]="false"
+                    [outerStrokeWidth]="16"
+                    [innerStrokeWidth]="6"
+                    [outerStrokeColor]="'#0b6986'"
+                    [innerStrokeColor]="'#9CD3D8'"
+                    [animation]="true"
+                    [animationDuration]="400"
+                    [showBackground]="true"
+                    [backgroundColor]="'white'"
+                    [backgroundOpacity]="0.2"
+                ></circle-progress>   
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4 text-center">
+                <circle-progress
+                    [percent]="85"
+                    [radius]="100"
+                    [title]="'Angular'"
+                    [titleColor]="'white'"
+                    [titleFontSize]="'2em'"
+                    [showUnits]="false"
+                    [showSubtitle]="false"
+                    [outerStrokeWidth]="16"
+                    [innerStrokeWidth]="6"
+                    [outerStrokeColor]="'#0b6986'"
+                    [innerStrokeColor]="'#9CD3D8'"
+                    [animation]="true"
+                    [animationDuration]="500"
+                    [showBackground]="true"
+                    [backgroundColor]="'white'"
+                    [backgroundOpacity]="0.2"
+                ></circle-progress>   
+            </div>
+            <div class="col-sm-4 col-md-4 col-lg-4 text-center">
+                <circle-progress
+                    [percent]="85"
+                    [radius]="100"
+                    [title]="'MySQL'"
+                    [titleColor]="'white'"
+                    [titleFontSize]="'2em'"
+                    [showUnits]="false"
+                    [showSubtitle]="false"
+                    [outerStrokeWidth]="16"
+                    [innerStrokeWidth]="6"
+                    [outerStrokeColor]="'#0b6986'"
+                    [innerStrokeColor]="'#9CD3D8'"
+                    [animation]="true"
+                    [animationDuration]="550"
+                    [showBackground]="true"
+                    [backgroundColor]="'white'"
+                    [backgroundOpacity]="0.2"
+                ></circle-progress>   
+            </div>   
         </div>
+
     </div>
 </section>
 
