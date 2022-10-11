@@ -3,17 +3,17 @@
         
         <div class="d-flex justify-content-center">
             <h1 class="title d-flex justify-content-center pt-5 pb-5">Skills</h1> 
-            <a href="#" class="title pt-4 ps-3">
-                <i class="bi bi-plus-circle-fill ps-3"></i>   
-            </a>
+            <div class="title pb-5" style="padding-top: 2rem;">    
+                <i class="bi bi-plus-circle-fill ps-3" routerLink="/nuevaskill" *ngIf="isLogged"></i>
+            </div>  
         </div>
        
         <div class="row">
-            <div class="col-sm-4 col-md-4 col-lg-4 text-center pb-5">
+            <div class="col-sm-4 col-md-4 col-lg-4 text-center pb-5 circulo" *ngFor="let Skill of skills">
                 <circle-progress
-                    [percent]="85"
+                    [percent]="(Skill.porcentaje)"
                     [radius]="100"
-                    [title]="'HTML'"
+                    [title]="(Skill.nombreS)"
                     [titleColor]="'white'"
                     [titleFontSize]="'2em'"
                     [showUnits]="false"
@@ -27,108 +27,22 @@
                     [showBackground]="true"
                     [backgroundColor]="'white'"
                     [backgroundOpacity]="0.2"
+                    class="pb-2"
                 ></circle-progress>   
+               
+                <div class="pb-3">
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-light" routerLink="/editskill/{{Skill.id}}">
+                        <i class="bi bi-pencil-fill"></i></button>
+                    </td>
+                    <td *ngIf="isLogged">
+                        <button class="btn btn-danger" (click)="delete(Skill.id)">
+                            <i class="bi bi-trash-fill"></i>Borrar</button>
+                    </td>    
+                </div>
+               
             </div>
-            <div class="col-sm-4 col-md-4 col-lg-4 text-center">
-                <circle-progress
-                    [percent]="85"
-                    [radius]="100"
-                    [title]="'CSS'"
-                    [titleColor]="'white'"
-                    [titleFontSize]="'2em'"
-                    [showUnits]="false"
-                    [showSubtitle]="false"
-                    [outerStrokeWidth]="16"
-                    [innerStrokeWidth]="6"
-                    [outerStrokeColor]="'#0b6986'"
-                    [innerStrokeColor]="'#9CD3D8'"
-                    [animation]="true"
-                    [animationDuration]="500"
-                    [showBackground]="true"
-                    [backgroundColor]="'white'"
-                    [backgroundOpacity]="0.2"
-                ></circle-progress>   
-            </div>
-            <div class="col-sm-4 col-md-4 col-lg-4 text-center">
-                <circle-progress
-                    [percent]="85"
-                    [radius]="100"
-                    [title]="'Javascript'"
-                    [titleColor]="'white'"
-                    [titleFontSize]="'2em'"
-                    [showUnits]="false"
-                    [showSubtitle]="false"
-                    [outerStrokeWidth]="16"
-                    [innerStrokeWidth]="6"
-                    [outerStrokeColor]="'#0b6986'"
-                    [innerStrokeColor]="'#9CD3D8'"
-                    [animation]="true"
-                    [animationDuration]="550"
-                    [showBackground]="true"
-                    [backgroundColor]="'white'"
-                    [backgroundOpacity]="0.2"
-                ></circle-progress>   
-            </div>
-            <div class="col-sm-4 col-md-4 col-lg-4 text-center">
-                <circle-progress
-                    [percent]="85"
-                    [radius]="100"
-                    [title]="'JAVA'"
-                    [titleColor]="'white'"
-                    [titleFontSize]="'2em'"
-                    [showUnits]="false"
-                    [showSubtitle]="false"
-                    [outerStrokeWidth]="16"
-                    [innerStrokeWidth]="6"
-                    [outerStrokeColor]="'#0b6986'"
-                    [innerStrokeColor]="'#9CD3D8'"
-                    [animation]="true"
-                    [animationDuration]="400"
-                    [showBackground]="true"
-                    [backgroundColor]="'white'"
-                    [backgroundOpacity]="0.2"
-                ></circle-progress>   
-            </div>
-            <div class="col-sm-4 col-md-4 col-lg-4 text-center">
-                <circle-progress
-                    [percent]="85"
-                    [radius]="100"
-                    [title]="'Angular'"
-                    [titleColor]="'white'"
-                    [titleFontSize]="'2em'"
-                    [showUnits]="false"
-                    [showSubtitle]="false"
-                    [outerStrokeWidth]="16"
-                    [innerStrokeWidth]="6"
-                    [outerStrokeColor]="'#0b6986'"
-                    [innerStrokeColor]="'#9CD3D8'"
-                    [animation]="true"
-                    [animationDuration]="500"
-                    [showBackground]="true"
-                    [backgroundColor]="'white'"
-                    [backgroundOpacity]="0.2"
-                ></circle-progress>   
-            </div>
-            <div class="col-sm-4 col-md-4 col-lg-4 text-center">
-                <circle-progress
-                    [percent]="85"
-                    [radius]="100"
-                    [title]="'MySQL'"
-                    [titleColor]="'white'"
-                    [titleFontSize]="'2em'"
-                    [showUnits]="false"
-                    [showSubtitle]="false"
-                    [outerStrokeWidth]="16"
-                    [innerStrokeWidth]="6"
-                    [outerStrokeColor]="'#0b6986'"
-                    [innerStrokeColor]="'#9CD3D8'"
-                    [animation]="true"
-                    [animationDuration]="550"
-                    [showBackground]="true"
-                    [backgroundColor]="'white'"
-                    [backgroundOpacity]="0.2"
-                ></circle-progress>   
-            </div>   
+            
         </div>
 
     </div>

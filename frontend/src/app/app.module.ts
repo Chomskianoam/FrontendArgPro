@@ -23,6 +23,9 @@ import { EditProyectoComponent } from './components/projects/edit-proyecto.compo
 import { NewProyectoComponent } from './components/projects/new-proyecto.component';
 import { EditAboutmeComponent } from './components/about-me/edit-aboutme.component';
 import { NgCircleProgressModule } from 'ng-circle-progress';
+import { NewSkillsComponent } from './components/skills/new-skills.component';
+import { EditSkillsComponent } from './components/skills/edit-skills.component';
+import { NotFoundComponent } from './components/not-found/not-found.component';
 
 
 @NgModule({
@@ -43,7 +46,10 @@ import { NgCircleProgressModule } from 'ng-circle-progress';
     EditEducacionComponent,
     EditProyectoComponent,
     NewProyectoComponent,
-    EditAboutmeComponent
+    EditAboutmeComponent,
+    NewSkillsComponent,
+    EditSkillsComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
