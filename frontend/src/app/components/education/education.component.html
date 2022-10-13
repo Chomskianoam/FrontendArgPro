@@ -13,7 +13,7 @@
                 <div class="template_cards flex-shrink-1">
                     <div class="written">
                         <div class="d-flex justify-content-baseline">
-                            <i class="uil uil-pen" routerLink="/editeduc/{{Educacion.id}}" *ngIf="isLogged"></i>
+                            <i class="uil bi-pencil-fill" routerLink="/editeduc/{{Educacion.id}}" *ngIf="isLogged"></i>
                             <i class="bi bi-trash" (click)="delete(Educacion.id)" *ngIf="isLogged"></i>
                             <h1 class="pe-4">{{Educacion.tituloEd}}</h1>                                
                             </div>

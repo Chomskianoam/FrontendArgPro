@@ -13,7 +13,7 @@
                 <div class="template_cards flex-shrink-1">
                     <div class="written">
                         <div class="d-flex justify-content-baseline">
-                            <i class="uil uil-pen"></i>
+                            <i class="uil bi-pencil-fill"></i>
                             <i class="uil uil-trash-alt" ></i>
                             <h1>{{project.name}}</h1>
                         </div>
@@ -34,7 +34,7 @@
                 <div class="template_cards flex-shrink-1">
                     <div class="written">
                         <div class="d-flex justify-content-baseline">
-                            <i class="uil uil-pen" routerLink="/editproy/{{Proyectos.id}}" *ngIf="isLogged"></i>
+                            <i class="uil bi-pencil-fill" routerLink="/editproy/{{Proyectos.id}}" *ngIf="isLogged"></i>
                             <i class="bi bi-trash" (click)="delete(Proyectos.id)" *ngIf="isLogged"></i>
                             <h1 class="pe-4">{{Proyectos.nombreP}}</h1>                                
                             </div>
