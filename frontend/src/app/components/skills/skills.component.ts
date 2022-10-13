@@ -29,7 +29,7 @@ export class SkillsComponent implements OnInit {
     this.sSkills.lista().subscribe(data => {this.skills = data;})
   }
  
-  delete(id?: number){
+  delete(id: number){
     if(id != undefined){
       this.sSkills.delete(id).subscribe(
         data => {
