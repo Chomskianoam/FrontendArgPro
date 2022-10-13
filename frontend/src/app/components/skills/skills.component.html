@@ -35,8 +35,8 @@
                         <button class="btn btn-light" routerLink="/editskill/{{Skill.id}}">
                         <i class="bi bi-pencil-fill"></i></button>
                     </td>
-                    <td *ngIf="isLogged">
-                        <button class="btn btn-danger" (click)="delete(Skill.id)">
+                    <td *ngIf="isLogged" class="ps-3">
+                        <button class="btn" style="background-color: #9CD3D8;" (click)="delete(Skill.id)">
                             <i class="bi bi-trash-fill"></i>Borrar</button>
                     </td>    
                 </div>
