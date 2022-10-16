@@ -48,7 +48,7 @@ header{
   padding: 7px 20px;
   text-align: center;
   border: 0;
-  font-size: 16px;
+  font-size: 1rem;
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
@@ -70,14 +70,33 @@ header{
     color:#f2f2f2;
 }
 
+.bi-plus-circle-fill{
+    font-size: 3rem;
+    top: 10rem;
+}
+
+.bi-trash{
+    padding: 1.5rem .2rem 0 .2rem;
+    cursor: pointer;  
+    font-size: 20px;
+}
+
+.bi-pencil-fill{
+    padding-top: 1.5rem;
+    padding-left: 1rem;
+    cursor: pointer;  
+    font-size: 20px; 
+}
+
+
 .background_picture{
     width: 100%;
-    max-height: 380px;      /*Definí el tamaño en pixeles. Modificar este y el de all information para que sea responsivo. ¿Quizás con Bootstrap?*/
+    max-height: 23.75rem;      /*Definí el tamaño en pixeles. Modificar este y el de all information para que sea responsivo. ¿Quizás con Bootstrap?*/
 }
 
 .background-inicio{
     width: 100%;
-    max-height: 380px;      
+    max-height: 23.75rem;     /* Corroborar */ 
     border-radius: 30px 30px 0 0;     
     border: 3px solid #0b6986;
 }
@@ -90,8 +109,7 @@ header{
     position: absolute;     /*Poniéndole position relative a la imagen de fondo, y absolute al contenedor de la foto de perfil, pude superponerlas*/
     width: 150px; 
     height: 150px; 
-    top: 24rem;
-    
+    top: 24rem;   
 } 
 
 .perfil{
@@ -103,7 +121,7 @@ header{
 
 .about_me{
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 
@@ -145,8 +163,6 @@ header{
    
 }
 
-/*=========================SKILLS==========================*/
-
 .container{
     background-color: #0396A6;
     width: 100%;
@@ -160,49 +176,9 @@ header{
     font-family: 'Poppins', 'Sans-serif';
 }
 
-.bi-plus-slash-minus{
-    color:#0b6986;
-    font-size: 3rem;
-}
-
-.bi-plus-slash-minus:hover{
-    color:#f2f2f2;
-}
-
-.bi-plus-circle-fill{
-    color:#0b6986;
-    font-size: 3rem;
-    top: 10rem;
-}
-
-.bi-plus-circle-fill:hover{
-    color:#f2f2f2;
-}
-
-.bi-trash{
-    color:#0b6986;
-    padding: 1.5rem .2rem 0 .2rem;
-    cursor: pointer;  
-    font-size: 20px;
-
-}
-
-.bi-trash:hover{
-    color:#f2f2f2;
-}
-
-.bi-pencil-fill{
-    padding-top: 1.5rem;
-    padding-left: 1rem;
-    cursor: pointer;  
-    font-size: 20px; 
-}
-
 #title_skills{
 padding-top: 6rem;
 }
-
-
 
 .card3{
     background-color: #9CD3D8;  
@@ -305,29 +281,9 @@ padding-top: 6rem;
     cursor: pointer;
 }
 
-
-
 #logo_tecnica{
     height: 140px;
     padding: 2.5rem 2rem 0 0;
-}
-
-.filo{
-    padding-top: 20px;
-}
-
-#logo_filo{
-    height: 120px;
-    width: auto;
-    padding: 3rem 2rem 0 0;
-}
-
-/*================EXPERIENCIA=================*/
-
-.imgs_cards{
-    border-radius: 50%;
-    height: 120px;
-    padding: 1.5rem 2rem 0 0;
 }
 
 /*==================PROYECTOS==================*/
@@ -347,24 +303,39 @@ padding-top: 6rem;
     .perfil{
         position: relative;
     }
+    html {
+        font-size: 14px
+    }
     .name{
         padding-top: 4rem;
     }
 }
 
 @media all and (max-width:620px){
-     .title{
+     /* .title{
         font-size: 4rem;
+     } */
+        html{
+        font-size:13px
      }
     
  }
 
  @media all and (max-width:576px){     
-     .title{
+     /* .title{
         font-size: 3rem;
+     } */
+        html{
+        font-size: 12px;
      }
-
-     .bi-plus-slash-minus{
-        font-size: 2rem;
-    }
+     
+    .container_perfil{
+            position: relative;     
+            width: 150px; 
+            height: 150px; 
+            top: .5 rem;
+            left: .1 em;
+        } 
  }
+
+
