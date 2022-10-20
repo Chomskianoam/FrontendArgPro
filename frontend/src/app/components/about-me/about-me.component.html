@@ -5,39 +5,42 @@
             <img class="background-inicio position-relative d-none d-md-block" [src]="Aboutme.imgfondoD" alt="background"> 
         </div>
         
-        <div class="information">
+        <div class="information row">
             
-            <div class="container_perfil position-absolute">
-                <img [src]="Aboutme.imgperfilD" alt="perfil" class="perfil rounded-circle ms-4 position-absolute"> 
+            <div class="d-flex align-items-center flex-column d-sm-none"> 
+                <img [src]="Aboutme.imgperfilD" alt="perfil" class="perfil rounded-circle ms-4 position-absolute container_perfil" > 
+                   
+                <h2 class="h2-mdtext-white text-center name mt-5" style="margin-left: 1rem; color: #f2f2f2;
+                font-family: 'Poppins', sans-serif;">{{Aboutme.nombreD}}</h2>
+                <p class="text-dark text-center name" style="margin-left: 1rem; height: 1rem; font-size: 1rem;  padding-top: 0px;
+                font-family: 'Poppins', sans-serif;">{{Aboutme.ubicacionD}}</p>
+            </div>
+
+            <div class="d-none d-sm-block col-4 col-sm-4 col-md-4 col-lg-4">
+                <img [src]="Aboutme.imgperfilD" alt="perfil" class="perfil rounded-circle ms-4 position-absolute container_perfil" > 
+                   
+                <h2 class="h2-mdtext-white text-center name" style="margin-left: 1rem; color: #f2f2f2;
+                font-family: 'Poppins', sans-serif;">{{Aboutme.nombreD}}</h2>
+                <p class="text-dark text-center name" style="margin-left: 1rem; height: 1rem; font-size: 1rem; padding-top: 0px;
+                font-family: 'Poppins', sans-serif;">{{Aboutme.ubicacionD}}</p>
             </div>
             
-            
-                <div class="row"> <!-- class="d-flex" -->
-                    <div class="name ps-0 col-4 align-self-start" style="height: 100%;">    <!-- col-12 col-sm-3 -->
-                        <h2 class="text-white">{{Aboutme.nombreD}}</h2>
-                        <p class="text-dark" style="height: 1rem;">{{Aboutme.ubicacionD}}</p>
+            <div class="col-12 col-sm-7 col-md-4 col-lg-4" style="padding-top:2rem;" > 
+                <div class="about_description"> 
+                    <div>
+                        <i class="bi bi-pencil-fill" style="float:left;font-size: 2rem; padding-top: 0;" routerLink="/editaboutme/{{Aboutme.id}}" *ngIf="isLogged"></i>
+                        <h1 class="text-center text-md-start text-end" style="padding: 0">About Me:</h1>
                     </div>
-
-                    <div class="col-7" style="padding-top:2rem;" > 
-                        <div class="about_description"> 
-                            <div>
-                                <i class="bi bi-pencil-fill" style="float:left;font-size: 2rem; padding-top: 0;" routerLink="/editaboutme/{{Aboutme.id}}" *ngIf="isLogged"></i>
-                                <h1 class="text-sm-center text-md-start text-end" style="padding: 0">About Me:</h1>
-                            </div>
-                            
-                            <h3 class=" text-sm-center text-md-start text-end pe-3" > <span class="text-warning" style="padding: 0;"> {{Aboutme.puestoD}}  </span> </h3> 
-                                
-                            <h4 class=" text-sm-center text-md-start text-end pe-3">{{Aboutme.infoD}}</h4> 
+                    
+                    <h3 class=" text-center text-md-start text-end pe-3" > <span class="text-warning" style="padding: 0;"> {{Aboutme.puestoD}}  </span> </h3> 
                         
-                            <h4 class=" text-sm-center text-md-start text-end pe-3">{{Aboutme.infosD}}</h4>
-                        </div>
-                    </div>
-
-                </div>  
-            
+                    <h4 class=" text-center text-md-start text-end pe-3">{{Aboutme.infoD}}</h4> 
+                
+                    <h4 class=" text-center text-md-start text-end pe-3">{{Aboutme.infosD}}</h4>
+                </div>
+            </div>
 
         </div>
-       
-      
+             
     </div>
 </section> 

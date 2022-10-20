@@ -129,19 +129,6 @@ header{
     justify-content: flex-end;
 }
 
-
-.name{
-    width: 25%;
-    margin-left: 2rem;
-    font-family: 'Poppins', sans-serif;
-    padding-top: 7rem;
-}
-
-.name p{
-    font-size: 1rem;
-    color: black;
-   }
-
 .about_description{
     font-family: 'Poppins', sans-serif;  
 }
@@ -307,7 +294,12 @@ padding-top: 6rem;
     }
 } */
 
-@media all and (max-width:768px){
+.name{
+    padding-top: 6rem;
+}
+
+
+@media all and (max-width:767px){
     html {
         font-size: 14px
     }
@@ -319,11 +311,11 @@ padding-top: 6rem;
     }   
     .container_perfil{
         position:relative;  
-        top: 0;
-        padding-top: 6rem;
+        top: 7rem;
     }
     .perfil{
         position: relative;
+       
     }
 }
 
@@ -335,19 +327,23 @@ padding-top: 6rem;
     
  }
 
- @media all and (max-width:576px){     
+ @media all and (max-width:3px){     
     
         html{
-        font-size: 12px;
+        font-size: 10px;
         }
      
-    .container_perfil{
-            position: relative;     
-            width: 150px; 
-            height: 150px; 
-            top: .5 rem;
-            left: .1 em;
-        } 
+        /* .container_perfil{
+            position:relative;  
+            left: 17rem;
+        }
+        .perfil{
+            position: relative;
+           
+        }
+        .h2-md{
+            padding-left: 17rem;
+        } */
  }
 
 
