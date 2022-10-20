@@ -1,47 +1,3 @@
-<!-- <section class="start p-4">
-    <div class="rounded-5 cont-start" *ngFor="let Aboutme of about">
-        
-        <div class="rounded-4 rounded-top background_picture d-none d-sm-block">
-            <img class="background-inicio position-relative d-none d-md-block" [src]="Aboutme.imgfondoD" alt="background"> 
-        </div>
-        
-        <div class="information">
-            
-            <div class="container_perfil position-absolute">
-                <img [src]="Aboutme.imgperfilD" alt="perfil" class="perfil rounded-circle ms-4 position-absolute"> 
-            </div>
-            
-            <div class="d-flex">
-
-                <div class="name ps-0" style="width: 25%;">
-                    <h2 class="text-white">{{Aboutme.nombreD}}</h2>
-                    <p class="text-dark" style="height: 1rem;">{{Aboutme.ubicacionD}}</p>
-                </div>
-
-                <div class="d-flex pt-4">
-                    <div class="about_description pe-3"> 
-                        <div class="d-flex">
-                            <i class="uil uil-edit" style="font-size: 2.5rem;" routerLink="/editaboutme/{{Aboutme.id}}" *ngIf="isLogged"></i>
-                            <h1 class="px-2">About Me:</h1>
-                        </div>
-                        
-                        <h3> <span class="text-warning"> {{Aboutme.puestoD}}  </span> </h3> 
-                            
-                        <h4>{{Aboutme.infoD}}</h4> 
-                       
-                        <h4 class="d-block">{{Aboutme.infosD}}</h4>
-                    </div>
-                </div>
-
-            </div>  
-        
-
-        </div>
-       
-      
-    </div>
-</section>  -->
-
 <section class="p-4 ">
     <div class="rounded-5 cont-start" *ngFor="let Aboutme of about">
         
@@ -55,29 +11,30 @@
                 <img [src]="Aboutme.imgperfilD" alt="perfil" class="perfil rounded-circle ms-4 position-absolute"> 
             </div>
             
-            <div class="d-flex">
-                <div class="name ps-0" style="width: 25%;">
-                    <h2 class="text-white">{{Aboutme.nombreD}}</h2>
-                    <p class="text-dark" style="height: 1rem;">{{Aboutme.ubicacionD}}</p>
-                </div>
-
-                <div class="d-flex pt-4">
-                    <div class="about_description pe-3"> 
-                        <div class="d-flex">
-                            <i class="uil uil-edit" style="font-size: 2.5rem;" routerLink="/editaboutme/{{Aboutme.id}}" *ngIf="isLogged"></i>
-                            <h1 class="px-2">About Me:</h1>
-                        </div>
-                        
-                        <h3> <span class="text-warning"> {{Aboutme.puestoD}}  </span> </h3> 
-                            
-                        <h4>{{Aboutme.infoD}}</h4> 
-                       
-                        <h4 class="d-block">{{Aboutme.infosD}}</h4>
+            
+                <div class="row"> <!-- class="d-flex" -->
+                    <div class="name ps-0 col-4 align-self-start" style="height: 100%;">    <!-- col-12 col-sm-3 -->
+                        <h2 class="text-white">{{Aboutme.nombreD}}</h2>
+                        <p class="text-dark" style="height: 1rem;">{{Aboutme.ubicacionD}}</p>
                     </div>
-                </div>
 
-            </div>  
-        
+                    <div class="col-7" style="padding-top:2rem;" > 
+                        <div class="about_description"> 
+                            <div>
+                                <i class="bi bi-pencil-fill" style="float:left;font-size: 2rem; padding-top: 0;" routerLink="/editaboutme/{{Aboutme.id}}" *ngIf="isLogged"></i>
+                                <h1 class="text-sm-center text-md-start text-end" style="padding: 0">About Me:</h1>
+                            </div>
+                            
+                            <h3 class=" text-sm-center text-md-start text-end pe-3" > <span class="text-warning" style="padding: 0;"> {{Aboutme.puestoD}}  </span> </h3> 
+                                
+                            <h4 class=" text-sm-center text-md-start text-end pe-3">{{Aboutme.infoD}}</h4> 
+                        
+                            <h4 class=" text-sm-center text-md-start text-end pe-3">{{Aboutme.infosD}}</h4>
+                        </div>
+                    </div>
+
+                </div>  
+            
 
         </div>
        

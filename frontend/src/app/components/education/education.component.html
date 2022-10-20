@@ -7,30 +7,31 @@
                 <i class="bi bi-plus-circle-fill ps-3" routerLink="/nuevaeduc" *ngIf="isLogged"></i>   
             </div> 
         </div>
-            
-        <ul style="width: 100%;">
-            <li class="d-flex pb-5 flex-column justify-content-center align-items-center" *ngFor="let Educacion of educ">
-                <div class="template_cards flex-shrink-1">
-                    <div class="written">
-                        <div class="d-flex justify-content-baseline">
-                            <i class="bi bi-pencil-fill" routerLink="/editeduc/{{Educacion.id}}" *ngIf="isLogged"></i>
-                            <i class="bi bi-trash" (click)="delete(Educacion.id)" *ngIf="isLogged"></i>
-                            <h1 class="pe-4">{{Educacion.tituloEd}}</h1>                                
+        
+        <div style="width:80%">
+            <ul style="width: 100%;">
+                <li class="d-flex pb-5 flex-column justify-content-center align-items-center" *ngFor="let Educacion of educ">
+                    <div class="template_cards flex-shrink-1">
+                        <div class="written">
+                            <div class="d-flex justify-content-baseline">
+                                <i class="bi bi-pencil-fill" routerLink="/editeduc/{{Educacion.id}}" *ngIf="isLogged"></i>
+                                <i class="bi bi-trash" (click)="delete(Educacion.id)" *ngIf="isLogged"></i>
+                                <h1 class="pe-4">{{Educacion.tituloEd}}</h1>                                
+                                </div>
+                                <p class="lh-lg"> 
+                                    {{Educacion.nombreEd}} <br>
+                                    {{Educacion.yearEd}} <br>    
+                                </p>
                             </div>
-                            <p class="lh-lg"> 
-                                {{Educacion.nombreEd}} <br>
-                                {{Educacion.yearEd}} <br>    
-                            </p>
-                        </div>
-                         
-                        <div class="logo d-none d-sm-block">
-                            <img id="logo_tecnica" [src]="Educacion.imgEd"/> 
-                        </div>   
-     
-                </div>
-            </li>
-        </ul> 
-
+                            
+                            <div class="d-none d-lg-block">
+                                <img id="logo_tecnica" [src]="Educacion.imgEd"/> 
+                            </div>   
+        
+                    </div>
+                </li>
+            </ul> 
+        </div>
                        
     </div>
 </section>

@@ -31,6 +31,12 @@ section{
     background-color: #0b6986;
 }
 
+.row * {
+    flex-shrink:0;
+    width: none;
+
+   }   
+
 /*===================HEADER=================*/
 
 header{
@@ -88,7 +94,6 @@ header{
     font-size: 20px; 
 }
 
-
 .background_picture{
     width: 100%;
     max-height: 23.75rem;      /*Definí el tamaño en pixeles. Modificar este y el de all information para que sea responsivo. ¿Quizás con Bootstrap?*/
@@ -127,8 +132,9 @@ header{
 
 .name{
     width: 25%;
-    margin: 7rem 1.5rem 0 1.5rem;
+    margin-left: 2rem;
     font-family: 'Poppins', sans-serif;
+    padding-top: 7rem;
 }
 
 .name p{
@@ -294,27 +300,35 @@ padding-top: 6rem;
     color: #0b6986;
 }
 
+/* @media all and (max-width:992px){
+    .modificar{
+        justify-content: end;
+        align-items: flex-end;
+    }
+} */
+
 @media all and (max-width:768px){
-    .container_perfil{
-        position:relative;  
-        top: 0;
-        padding-top: 5.5rem;
-    }
-    .perfil{
-        position: relative;
-    }
     html {
         font-size: 14px
     }
     .name{
-        padding-top: 4rem;
+        padding-top: 13.5rem;
+    }
+    .modificacion{
+        justify-content: end;
+    }   
+    .container_perfil{
+        position:relative;  
+        top: 0;
+        padding-top: 6rem;
+    }
+    .perfil{
+        position: relative;
     }
 }
 
+
 @media all and (max-width:620px){
-     /* .title{
-        font-size: 4rem;
-     } */
         html{
         font-size:13px
      }
@@ -322,12 +336,10 @@ padding-top: 6rem;
  }
 
  @media all and (max-width:576px){     
-     /* .title{
-        font-size: 3rem;
-     } */
+    
         html{
         font-size: 12px;
-     }
+        }
      
     .container_perfil{
             position: relative;     
