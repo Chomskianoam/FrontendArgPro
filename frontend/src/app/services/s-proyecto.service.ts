@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class SProyectoService {
-  proURL = 'http://localhost:8080/proy/'
+  proURL = 'https://backend-argpro.herokuapp.com/proy/'
 
   constructor(private httpClient : HttpClient) { }
 

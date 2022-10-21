@@ -7,7 +7,7 @@ import { Aboutme } from '../model/aboutme';
   providedIn: 'root'
 })
 export class SAboutmeService {
-  aboutURL = 'http://localhost:8080/about/'
+  aboutURL = 'https://backend-argpro.herokuapp.com/about/'
 
   constructor(private httpClient: HttpClient) { }
 
