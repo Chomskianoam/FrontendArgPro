@@ -1,34 +1,36 @@
 import { HttpClient } from "@angular/common/http";
 import { Injectable } from "@angular/core";
 import { Observable } from "rxjs";
+import { environment } from "src/environments/environment";
 import { Skills } from "../model/skills";
 
 @Injectable({
     providedIn: 'root'
 })
 export class SSkillsService{
-skURL = "https://backend-argpro.herokuapp.com/skills/"
+/* skURL = "https://backend-argpro.herokuapp.com/skills/" */
+URL = environment.URL + 'skills/';
 
     constructor(private httpClient: HttpClient){}
 
     public lista():Observable<Skills[]>{
-        return this.httpClient.get<Skills[]>(this.skURL + 'lista');
+        return this.httpClient.get<Skills[]>(this.URL + 'lista');
     }
 
     public detail(id: number):  Observable<Skills>{
-        return this.httpClient.get<Skills>(this.skURL + `detail/${id}`);
+        return this.httpClient.get<Skills>(this.URL + `detail/${id}`);
     }
 
     public save(skills: Skills): Observable<any>{
-        return this.httpClient.post<any>(this.skURL + 'create', skills);
+        return this.httpClient.post<any>(this.URL + 'create', skills);
     }
 
     public update(id: number, skills: Skills):Observable<any>{
-        return this.httpClient.put<any>(this.skURL + `update/${id}`, skills);
+        return this.httpClient.put<any>(this.URL + `update/${id}`, skills);
     }
 
     public delete(id: number): Observable<any>{
-        return this.httpClient.delete<any>(this.skURL + `delete/${id}`);
+        return this.httpClient.delete<any>(this.URL + `delete/${id}`);
     }
 
 }
