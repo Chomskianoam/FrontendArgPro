@@ -165,7 +165,7 @@ header{
 }
 
 .title{
-    font-size: 5rem;    
+    font-size: 4.5rem;    
     font-family: 'Poppins', 'Sans-serif';
 }
 
@@ -322,28 +322,12 @@ padding-top: 6rem;
 
 @media all and (max-width:620px){
         html{
-        font-size:13px
+        font-size:12px
      }
-    
+        .title{
+            font-size: 3rem;
+        }
  }
 
- @media all and (max-width:3px){     
-    
-        html{
-        font-size: 10px;
-        }
-     
-        /* .container_perfil{
-            position:relative;  
-            left: 17rem;
-        }
-        .perfil{
-            position: relative;
-           
-        }
-        .h2-md{
-            padding-left: 17rem;
-        } */
- }
 
 
